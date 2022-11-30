@@ -1,0 +1,45 @@
+<div id="bg" style="background-image: url(https://images.unsplash.com/photo-1579546928937-641f7ac9bced?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);">
+
+
+<ngb-carousel >
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img id="slider" src="https://github.com/gilchrist01/imagesforslides/blob/main/slider_1.jpg?raw=true" alt="Random first slide" />
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img id="slider" src="https://github.com/gilchrist01/imagesforslides/blob/main/slider_2.jpg?raw=true" alt="Random second slide" />
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img id="slider" src="https://github.com/gilchrist01/imagesforslides/blob/main/slider_3.jpg?raw=true" alt="Random third slide" />
+		</div>
+	</ng-template>
+    <ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img id="slider" src="https://github.com/gilchrist01/imagesforslides/blob/main/slider_4.jpg?raw=true" alt="Random fourth slide" />
+		</div>
+	</ng-template>
+    <ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img id="slider" src="https://github.com/gilchrist01/imagesforslides/blob/main/slider_5.jpg?raw=true" alt="Random fiveth slide" />
+		</div>
+	</ng-template>
+</ngb-carousel>
+
+<br>
+<br>
+
+
+<div id="grid" >
+  <div id="griding" *ngFor="let p of productslisting">
+      <div><b>{{p.productName}}</b></div>
+      <img id="products" src="{{p.image}}" alt="img" /><br>
+      <div><b>₹ {{p.cost}}</b></div>
+      <button class="btn btn-outline-dark" type="submit" >Add To Cart</button>
+  </div>
+</div>
+</div>
+
